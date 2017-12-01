@@ -1,6 +1,6 @@
 # Chicago ASCII Art Scripts
 
-![Screenshot of script output](/screenshot0.png)
+![Screenshot of script output](/screenshots/screenshot0.png)
 
 Some bash scripts that echo ASCII art of the Chicago flag or skyline in the horizontal center of the terminal.
 
@@ -24,5 +24,6 @@ source ~/.chicago-ascii/flag.sh
 
 - `flag.sh`: The Chicago flag
 - `skyline.sh`: The Chicago skyline (with some artistic liberties taken)
+- `skyline-condensed.sh`: A narrower, 2 color version of `skyline.sh`
 
 
