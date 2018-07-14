@@ -1,12 +1,22 @@
 #!/bin/bash
 
 # Color escape sequences
-# Color 1
+# Defaults
 c1="$(tput setaf 4)"
-# Color 2
 c2="$(tput setaf 6)"
 # Reset attributes
 rst="$(tput sgr0)"
+
+# if -c flag is provided, override default colors
+i=1
+while getopts "c:" opt; do
+    case $opt in
+        c)
+            eval "c$i=\$(tput setaf $OPTARG)"
+            ((i++))
+            ;;
+    esac
+done
 
 # Centering text
 # Width of output
