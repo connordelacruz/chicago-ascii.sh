@@ -26,9 +26,14 @@ source ~/.chicago-ascii/flag.sh
 - `skyline.sh`: The Chicago skyline (with some artistic liberties taken)
 - `skyline-condensed.sh`: A narrower, 2 color version of `skyline.sh`
 
+## TODO:
+
+- Document custom color arg for `skyline-condensed.sh` w/ new screenshots
+- Get rid of `skyline.sh` since it was basically just a jumping off point for condensed version
+
 ## License
 
-Copyright (c) 2017 Connor de la Cruz
+Copyright (c) 2021 Connor de la Cruz
 
 This project is licensed under the terms of the MIT license. 
 
