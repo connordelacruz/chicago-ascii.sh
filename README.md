@@ -20,11 +20,11 @@ You can also source the file in a bash script:
 . ~/.chicago-ascii/flag.sh
 ```
 
-### Custom Colors for `skyline-condensed.sh`
+### Custom Colors for `skyline.sh`
 
 **TODO: primary screenshot**
 
-`skyline-condensed.sh` takes up to 6 positional arguments for custom colors. Each argument must be a valid terminal foreground color code that can be passed to `tput setaf`.
+`skyline.sh` takes up to 6 positional arguments for custom colors. Each argument must be a valid terminal foreground color code that can be passed to `tput setaf`.
 
 **TODO: Examples**
 
@@ -32,13 +32,11 @@ You can also source the file in a bash script:
 ## ASCII Art Scripts
 
 - `flag.sh`: The Chicago flag
-- `skyline.sh`: The Chicago skyline (with some artistic liberties taken)
-- `skyline-condensed.sh`: A narrower, 2 color version of `skyline.sh`
+- `skyline.sh`: Chicago skyline (supports custom colors via arguments!)
 
-## TODO:
+**Other scripts:**
 
-- Document custom color arg for `skyline-condensed.sh` w/ new screenshots
-- Get rid of `skyline.sh` since it was basically just a jumping off point for condensed version
+- `skyline-condensed.sh`: *Legacy* `skyline-condensed.sh` is now `skyline.sh`
 
 ## License
 
