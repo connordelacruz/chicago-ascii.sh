@@ -2,23 +2,16 @@
 
 main() {
     # Colors ===================================================================
-    # TODO: just use positional args instead
     # Iterate thru args, assign variables c0-c5
     max_colors=6
-    i=0
-    while getopts "c:" opt; do
-        case $opt in
-            c)
-                eval "c$i=\$(tput setaf $OPTARG)"
-                ((i++))
-                if [[ $i == $max_colors ]]; then
-                    break
-                fi
-                ;;
-        esac
+    for (( i = 0; i < $#; i++ )); do
+        eval "c${i}=\$(tput setaf \$$(( i + 1 )))"
+        if [[ $i == $max_colors ]]; then
+            break
+        fi
     done
     # If no colors were passed, default to blue and cyan
-    if [[ $i == 0 ]]; then
+    if [[ $# == 0 ]]; then
         # Default: blue
         c0="$(tput setaf 4)"
         # Default: cyan
@@ -28,7 +21,7 @@ main() {
     fi
     # Handle any unset color vars
     if (( i < max_colors )); then
-        for (( x=$i; x<$max_colors; x++ )); do
+        for (( x = $i; x < $max_colors; x++ )); do
             eval "c${x}=\$c$(( x % i ))"
         done
     fi
