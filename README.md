@@ -25,12 +25,6 @@ To echo the ASCII art in terminal, just run one of the scripts. E.g.:
 ~/.chicago-flag/flag.sh
 ```
 
-You can also source the file in a bash script:
-
-```
-. ~/.chicago-ascii/flag.sh
-```
-
 ### Custom Colors for `skyline.sh`
 
 ![Custom skyline.sh colors example](../assets/screenshots/skyline-args-preview.png?raw=true)
